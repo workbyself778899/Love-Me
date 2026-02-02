@@ -12,7 +12,7 @@ export default function LoveGame() {
   const [time, setTime] = useState('');
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-pink-200 via-purple-200 to-pink-100 px-2 py-8">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-linear-to-br from-pink-200 via-purple-200 to-pink-100 px-2 py-8">
       <div className="w-full max-w-2xl bg-white/90 rounded-3xl shadow-2xl p-6 md:p-12 flex flex-col items-center">
         <h1 className="text-pink-600 text-xl md:text-5xl font-extrabold mb-4 text-center drop-shadow-lg select-none">
           💖 Love Date Game 💖

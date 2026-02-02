@@ -93,7 +93,7 @@ export default function LoveConfession() {
   return (
     <div
       id="love-container"
-      className="min-h-screen w-full flex items-center justify-center overflow-hidden relative bg-gradient-to-br from-pink-300 via-fuchsia-200 to-yellow-100 animate-gradient-move"
+      className="min-h-screen w-full flex items-center justify-center overflow-hidden relative bg-linear-to-br from-pink-300 via-fuchsia-200 to-yellow-100 animate-gradient-move"
       onMouseMove={handleMouseMove}
     >
       {/* Animated background hearts */}
@@ -132,14 +132,14 @@ export default function LoveConfession() {
       {/* Love confession game */}
       {!showDateGame ? (
         stage === 'question' ? (
-          <div className="bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 md:p-16 max-w- w-full mx-4 relative z-10 transform transition-all duration-500 hover:scale-105 border-4 border-pink-200">
+          <div className="bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 md:p-16 max-w-220 w-full mx-4 relative z-10 transform transition-all duration-500 hover:scale-105 border-4 border-pink-200">
             <div className="text-center flex mb-8 animate-bounce items-center justify-center gap-2 md:gap-8">
               <Heart className="hidden md:block w-24 h-24 text-red-400 fill-red-500 drop-shadow-lg animate-heartbeat" />
               <Image src="https://i.pinimg.com/originals/89/35/50/89355081a213ca3f622b0b39b94e9016.gif" alt='I love you' width={220} height={220} className='rounded-full border-4 border-pink-200 shadow-xl'  unoptimized  />
               <Heart className="hidden md:block w-24 h-24 text-red-400 fill-red-500 drop-shadow-lg animate-heartbeat" />
             </div>
             <h1 className="text-5xl md:text-6xl font-extrabold text-center mb-6 bg-linear-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent animate-pulse drop-shadow-lg">
-                Love Game <br /> <br /> 💕
+                Love Game <br  />   💕
             </h1>
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-8">
               <button
@@ -172,7 +172,7 @@ export default function LoveConfession() {
               <div className="mb-8 flex items-center justify-center relative">
                 <Image src="https://media.tenor.com/uBQM6iJ_hsgAAAAM/hug-cute.gif" alt='I love you' width={220} height={220} className='rounded-full border-4 border-pink-200 shadow-xl' unoptimized  />
               </div>
-              <h1 className="text-5xl md:text-6xl font-extrabold mb-6 py-2 bg-gradient-to-r from-pink-500 via-red-500 to-purple-600 bg-clip-text text-transparent drop-shadow-lg">
+              <h1 className="text-5xl md:text-6xl font-extrabold mb-6 py-2 bg-linear-to-r from-pink-500 via-red-500 to-purple-600 bg-clip-text text-transparent drop-shadow-lg">
                 🎉 Yay! 🎉
               </h1>
               <p className="text-2xl md:text-3xl text-gray-800 mb-6 font-semibold">
@@ -190,7 +190,7 @@ export default function LoveConfession() {
                   setNoSize(1);
                   setHearts([]);
                 }}
-                className="mt-10 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-bold text-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-2 border-purple-300"
+                className="mt-10 bg-linear-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-bold text-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-2 border-purple-300"
               >
                 Ask me again! 💕
               </button>
